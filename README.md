@@ -42,7 +42,8 @@ bashnpm install
 
 ## Usage
 The RSVP service can be used as follows:
-    ```typescript
+    
+    typescript
     
     import { RsvpService, DefaultLogger, Player } from './index';
     
