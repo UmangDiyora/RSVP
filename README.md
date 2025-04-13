@@ -15,17 +15,17 @@ This service provides a clean, focused API for tracking and managing player RSVP
 - Comprehensive test coverage
 
 ## File Structure
-rsvp-manager/
-│
-├── types.ts                  // Contains all interfaces and type definitions
-├── rsvp-service.ts           // The main RsvpService implementation
-├── default-logger.ts         // Logger implementation
-├── index.ts                  // Exports from the module
-├── example-usage.ts          // Example showing how to use the service
-├── rsvp-service.test.ts      // Unit tests for the RSVP service
-│
-├── package.json              // Project configuration
-└── tsconfig.json             // TypeScript configuration
+rsvp-manager/<br>
+│<br>
+├── types.ts                  // Contains all interfaces and type definitions<br>
+├── rsvp-service.ts           // The main RsvpService implementation<br>
+├── default-logger.ts         // Logger implementation<br>
+├── index.ts                  // Exports from the module<br>
+├── example-usage.ts          // Example showing how to use the service<br>
+├── rsvp-service.test.ts      // Unit tests for the RSVP service<br>
+│<br>
+├── package.json              // Project configuration<br>
+└── tsconfig.json             // TypeScript configuration<br>
 
 ## Installation
 
@@ -83,27 +83,15 @@ For a complete example, see `example-usage.ts`.
 
 ## Development
 
-### Build
-  ```bash
-   npm run build
-
-## Run Example
-
-  bash
-  npm start
+- Bulid: `npm run build`
+- Start: `npm start`
+- Test: `npm test`
   
-# Run Tests
+## Design Decisions
 
-bash
-npm test
-  
-Design Decisions
+- **Dependency Injection:** Logger is injected to make the service testable and adaptable
+- **Pure Functions:** Methods are designed to be predictable and minimize side effects
+- **TypeScript Interfaces:** Clear, reusable types for domain objects
+- **Data Structure:** Using Map for O(1) lookup of RSVPs by player ID
+- **Error Handling:** Robust validation with descriptive error messages
 
-Dependency Injection: Logger is injected to make the service testable and adaptable
-Pure Functions: Methods are designed to be predictable and minimize side effects
-TypeScript Interfaces: Clear, reusable types for domain objects
-Data Structure: Using Map for O(1) lookup of RSVPs by player ID
-Error Handling: Robust validation with descriptive error messages
-
-License
-ISC
